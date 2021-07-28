@@ -15,4 +15,4 @@ COPY conf/ddclient.conf /etc/ddclient/ddclient.conf
 RUN chmod 600 /etc/ddclient/ddclient.conf
 COPY setup-and-run.sh /usr/src/app
 
-CMD ["bash", "./setup-and-run.sh"]
+CMD ["./setup-and-run.sh"]

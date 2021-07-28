@@ -8,6 +8,7 @@ services:
         ddclient:
                 build: ./ddclient-cloudflare
                 privileged: true
+                env_file: .env
         nginx:
                 build: ./nginx
                 privileged: true

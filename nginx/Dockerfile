@@ -103,4 +103,4 @@ RUN set -x \
 COPY conf/nginx-spec.conf /app/nginx-spec.conf
 COPY setup-and-run.sh /app/setup-and-run.sh
 
-CMD ["bash", "/app/setup-and-run.sh"]
+CMD ["/app/setup-and-run.sh"]
