@@ -21,6 +21,8 @@ services:
                 links:
                         - "unifi"
                         - "unms"
+                environment: 
+                        - "DOMAIN"
         unifi:
                 build: ./unifi
                 ports:
