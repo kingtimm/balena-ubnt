@@ -1,9 +1,29 @@
 version: '2'
 volumes:
         unifi-data:
+                driver: local
+                driver_opts:
+                        type: 'none'
+                        o: 'bind'
+                        device: '${STORAGE_VOLUME_PATH}/unifi-data'
         unms-data:
+                driver: local
+                driver_opts:
+                        type: 'none'
+                        o: 'bind'
+                        device: '${STORAGE_VOLUME_PATH}/unms-data'
         nginx-data:
+                driver: local
+                driver_opts:
+                        type: 'none'
+                        o: 'bind'
+                        device: '${STORAGE_VOLUME_PATH}/nginx-data'
         letsencrypt:
+                driver: local
+                driver_opts:
+                        type: 'none'
+                        o: 'bind'
+                        device: '${STORAGE_VOLUME_PATH}/letsencrypt'
 services:
         ddclient:
                 build: ./ddclient-cloudflare
