@@ -5,6 +5,10 @@
 ### dotenv ###
 .env
 
+### data folder ###
+data/
+data/*
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
